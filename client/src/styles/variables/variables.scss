@@ -4,7 +4,8 @@ $secondary: #3082F9;
 $background: linear-gradient(180deg, #222222 0%, #071120 100%);
 
 // Fonts
-
+$roboto: 'Roboto', 'Helvetica Neue', sans-serif;
+$Montserrat: "Montserrat", sans-serif;
 
 // Element Mixins
 @mixin removeButtonDefaults {
