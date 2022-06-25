@@ -1,7 +1,9 @@
 import React from 'react';
+import { Athlete } from '../utils/types';
+import Card from './Card';
 
 interface Props {
-	
+	athletes: Athlete[]
 }
 
 const CardsMap: React.FC<Props> = (props): JSX.Element => {
@@ -10,7 +12,7 @@ const CardsMap: React.FC<Props> = (props): JSX.Element => {
 		<div className='display-athletes'>
 			<div className="athletes-map">
 				{
-					// map cards
+					props.athletes.map(athlete => <Card key={athlete.id} athlete={athlete} />)
 				}
 			</div>
 			<div className="load-more">

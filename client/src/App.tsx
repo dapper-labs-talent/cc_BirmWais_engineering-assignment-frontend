@@ -1,19 +1,16 @@
 import React from 'react';
 import CardsMap from './components/CardsMap';
 import Header from './components/Header';
+import athletesJson from './utils/dummy.json';
 
-interface Props {
-  
-}
-
-const Apps: React.FC<Props> = (): JSX.Element => {
+const App: React.FC = (): JSX.Element => {
 
   return (
     <>
       <Header />
-      <CardsMap />
+      <CardsMap athletes={athletesJson} />
     </>
   );
 }
 
-export default Apps;
+export default App;
