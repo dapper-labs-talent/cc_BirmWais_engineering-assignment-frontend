@@ -4,12 +4,12 @@ import Header from './components/Header';
 import useAthletes from './hooks/useAthletes';
 
 const App: React.FC = (): JSX.Element => {
-  const { athletes, joinDrop } = useAthletes();
+  const { athletes, joinDrop, loadMoreAthletes } = useAthletes();
 
   return (
     <>
       <Header />
-      <CardsMap athletes={athletes} joinDrop={joinDrop} />
+      <CardsMap athletes={athletes} joinDrop={joinDrop} loadMoreAthletes={loadMoreAthletes} />
     </>
   );
 }
