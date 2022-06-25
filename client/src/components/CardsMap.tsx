@@ -3,7 +3,8 @@ import { Athlete } from '../utils/types';
 import Card from './Card';
 
 interface Props {
-	athletes: Athlete[]
+	athletes: Athlete[];
+	joinDrop: (id: number) => void;
 }
 
 const CardsMap: React.FC<Props> = (props): JSX.Element => {
@@ -12,7 +13,7 @@ const CardsMap: React.FC<Props> = (props): JSX.Element => {
 		<div className='display-athletes'>
 			<div className="athletes-map">
 				{
-					props.athletes.map(athlete => <Card key={athlete.id} athlete={athlete} />)
+					props.athletes.map(athlete => <Card key={athlete.id} athlete={athlete} joinDrop={props.joinDrop} />)
 				}
 			</div>
 			<div className="load-more">

@@ -9,7 +9,7 @@ const App: React.FC = (): JSX.Element => {
   return (
     <>
       <Header />
-      <CardsMap athletes={athletes} />
+      <CardsMap athletes={athletes} joinDrop={joinDrop} />
     </>
   );
 }

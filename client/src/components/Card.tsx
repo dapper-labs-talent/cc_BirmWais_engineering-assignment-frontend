@@ -3,6 +3,7 @@ import { Athlete } from '../utils/types';
 
 interface Props {
 	athlete: Athlete;
+	joinDrop: (id: number) => void;
 }
 
 const Card: React.FC<Props> = (props): JSX.Element => {
@@ -31,7 +32,7 @@ const Card: React.FC<Props> = (props): JSX.Element => {
 			</div>
 
 			<div className="card-athletes-footer">
-				<button className="join-drop">Join Drop ;&</button>
+				<button className="join-drop" onClick={() => props.joinDrop(id)}>Join Drop ;&</button>
 			</div>
 
 		</div>
