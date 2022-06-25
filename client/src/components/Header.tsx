@@ -1,13 +1,13 @@
 import React from 'react';
 
 interface Props {
-	
+	sortParams: (sortOptions: string) => void
 }
 
-const Header: React.FC<Props> = (): JSX.Element => {
+const Header: React.FC<Props> = ({sortParams}): JSX.Element => {
 
 	const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
-		console.log("selected option:", e.target.value)
+		sortParams(e.target.value);
 	}
 
 	return (
