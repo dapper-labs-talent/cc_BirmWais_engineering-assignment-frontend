@@ -1,8 +1,12 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import CardsMap from './components/CardsMap';
-import Header from './components/Header';
+
+import './styles/app/app.css';
 import useAthletes from './hooks/useAthletes';
 import { Athlete } from './utils/types';
+
+import CardsMap from './components/CardsMap';
+import Header from './components/Header';
+
 
 const App: React.FC = (): JSX.Element => {
   const { athletes, joinDrop, loadMoreAthletes } = useAthletes();
@@ -10,15 +14,17 @@ const App: React.FC = (): JSX.Element => {
 	const [sortParams, setSortParams] = useState<string>('newest');
 
 	const sortAthletes = () => {
+		const athletesArray = [...athletes];
+		
 		if (sortParams === "newest") {
 			setSortedAthletes(
-				athletes.sort((a, b) => {
+				athletesArray.sort((a, b) => {
 					return +new Date(b.dropDate) - +new Date(a.dropDate);
 				})
 			)
 		} else {
 			setSortedAthletes(
-			athletes.sort((a, b) => {
+			athletesArray.sort((a, b) => {
 				return +new Date(a.dropDate) - +new Date(b.dropDate);
 			}))
 		}
