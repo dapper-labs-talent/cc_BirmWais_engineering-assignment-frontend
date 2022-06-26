@@ -1,4 +1,5 @@
 @import '../header/header.css';
+@import '../card/card.css';
 body {
   background: linear-gradient(180deg, #222222 0%, #071120 100%);
   background-repeat: no-repeat;

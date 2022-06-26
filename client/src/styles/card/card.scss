@@ -1,0 +1,21 @@
+@import '../variables/variables.scss';
+
+.card {
+	width: fit-content;
+
+	.image-container {
+		position: relative;
+
+		img {
+			display: block;
+		}
+
+		.card-shadow {
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
