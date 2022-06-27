@@ -16,7 +16,7 @@ const Card: React.FC<Props> = (props): JSX.Element => {
 
 				<img src={image} alt={`${name} photo`} />
 
-				<div className="card-shadow">
+				<div className="card-content">
 					<div className="card-header">
 						<div className="drop-date">
 							<p className="date">{dropDate}</p>

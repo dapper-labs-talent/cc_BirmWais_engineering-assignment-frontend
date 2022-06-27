@@ -8,13 +8,15 @@
 
 	.image-container {
 		position: relative;
+		overflow: hidden;
+		box-shadow: 0px 0px 3px #4b7cee50, inset 0px 0px 3px #4b7cee50;
 
 		img {
 			display: block;
+			filter: blur(3px);
 		}
 
-		.card-shadow {
-			box-shadow: 0px 0px 3px #4b7cee50, inset 0px 0px 3px #4b7cee50;
+		.card-content {
 			position: absolute;
 			z-index: 2;
 			top: 0;

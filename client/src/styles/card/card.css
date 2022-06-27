@@ -8,19 +8,21 @@
 }
 .card .image-container {
   position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 3px rgba(75, 124, 238, 0.3137254902), inset 0px 0px 3px rgba(75, 124, 238, 0.3137254902);
 }
 .card .image-container img {
   display: block;
+  filter: blur(3px);
 }
-.card .image-container .card-shadow {
-  box-shadow: 0px 0px 3px rgba(75, 124, 238, 0.3137254902), inset 0px 0px 3px rgba(75, 124, 238, 0.3137254902);
+.card .image-container .card-content {
   position: absolute;
   z-index: 2;
   top: 0;
   width: 100%;
   height: 100%;
 }
-.card .image-container .card-shadow .card-header {
+.card .image-container .card-content .card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,26 +30,26 @@
   padding-left: 24px;
   padding-right: 24px;
 }
-.card .image-container .card-shadow .card-header .drop-date .date {
+.card .image-container .card-content .card-header .drop-date .date {
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
 }
-.card .image-container .card-shadow .card-header .drop-date .description {
+.card .image-container .card-content .card-header .drop-date .description {
   font-size: 14px;
   color: #b5b5b5;
 }
-.card .image-container .card-shadow .card-body {
+.card .image-container .card-content .card-body {
   padding-top: 36px;
   padding-bottom: 54px;
 }
-.card .image-container .card-shadow .card-body h4 {
+.card .image-container .card-content .card-body h4 {
   text-align: center;
 }
-.card .image-container .card-shadow .card-body .link {
+.card .image-container .card-content .card-body .link {
   text-align: center;
 }
-.card .image-container .card-shadow .card-body .link a {
+.card .image-container .card-content .card-body .link a {
   color: #ffffff;
   text-decoration: none;
 }
