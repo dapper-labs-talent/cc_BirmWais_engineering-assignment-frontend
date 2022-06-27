@@ -2,6 +2,7 @@
 
 .card {
 	width: fit-content;
+	max-width: 100%;
 	box-sizing: border-box;
 	margin: 12px;
 	color: #ffffff;
@@ -12,6 +13,7 @@
 		box-shadow: 0px 0px 3px #4b7cee50, inset 0px 0px 3px #4b7cee50;
 
 		img {
+			max-width: 90vw;
 			display: block;
 			filter: blur(3px);
 		}
