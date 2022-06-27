@@ -1,7 +1,10 @@
-@import '../variables/variables.css';
+@import '../variables/variables.scss';
 
 .card {
 	width: fit-content;
+	box-sizing: border-box;
+	margin: 12px;
+	color: #ffffff;
 
 	.image-container {
 		position: relative;
@@ -11,18 +14,59 @@
 		}
 
 		.card-shadow {
+			box-shadow: 0px 0px 3px #4b7cee50, inset 0px 0px 3px #4b7cee50;
 			position: absolute;
 			z-index: 2;
 			top: 0;
 			width: 100%;
 			height: 100%;
+
+			.card-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding-top: 18px;
+				padding-left: 24px;
+				padding-right: 24px;
+		
+				.drop-date {
+					.date {
+						font-size: 18px;
+						font-weight: 600;
+						color: #ffffff;
+					}
+		
+					.description {
+						font-size: 14px;
+						color: #b5b5b5;
+					}
+				}
+			}
+		
+			.card-body {
+				padding-top: 36px;
+				padding-bottom: 54px;
+		
+				h4 {
+					text-align: center;
+				}
+		
+				.link {
+					text-align: center;
+		
+					a {
+						color: #ffffff;
+						text-decoration: none;
+					}
+				}
+			}
 		}
 	}
 
 	.card-athletes-footer {
-    button {
-      @include removeButtonDefaults();
-      @include buttonStyle();
-    }
-  }
+		button {
+			@include removeButtonDefaults();
+			@include buttonStyle();
+		}
+	}
 }

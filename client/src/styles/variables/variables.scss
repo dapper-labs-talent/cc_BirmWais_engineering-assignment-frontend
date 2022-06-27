@@ -9,48 +9,48 @@ $Montserrat: "Montserrat", sans-serif;
 
 // Element Mixins
 @mixin removeButtonDefaults {
-  background-color: transparent;
-  border-width: 0;
-  font-family: inherit;
-  font-size: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  padding: 0;
+	background-color: transparent;
+	border-width: 0;
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	padding: 0;
 }
 
 @mixin buttonStyle {
-  background: $primary;
-  color: #ffffff;
-  width: 100%;
-  font-size: 18px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
+	background: $primary;
+	color: #ffffff;
+	width: 100%;
+	font-size: 18px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 @mixin buttonHoverState {
-  
+	
 }
 
 @mixin sortByInput {
-  
+	
 }
 
 // Accessability
 // Text meant only for screen readers.
 @mixin screenReaderText {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  word-wrap: normal !important;
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
 }
