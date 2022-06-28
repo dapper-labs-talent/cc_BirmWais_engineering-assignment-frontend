@@ -1,1 +1,24 @@
-/*# sourceMappingURL=cardsMap.css.map */
+.display-athletes .athletes-map .card {
+  margin-left: auto;
+  margin-right: auto;
+}
+.display-athletes .load-more {
+  text-align: center;
+}
+.display-athletes .load-more button {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #3082F9;
+  margin: 36px;
+  cursor: pointer;
+}/*# sourceMappingURL=cardsMap.css.map */
