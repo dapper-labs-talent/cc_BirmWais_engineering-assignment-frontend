@@ -1,47 +1,52 @@
 header {
-  padding: 18px;
   color: #ffffff;
+  
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin: 6px;
+    text-transform: uppercase;
+  }
+
+  .sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      font-weight: 800;
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      margin: 6px;
+      text-transform: uppercase;
+    }
+
+    .select-wrapper {
+      position: relative;
+      margin: 6px;
+      padding: 0px;
+
+      i {
+        position: absolute;
+        top: 35%;
+        right: 12px;
+        border: solid #ffffff;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
+      select {
+        -webkit-appearance: none;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.5);
+        background-color: #141414;
+        border: 1px solid #717171;
+        padding: 9px 100px 9px 15px;
+      }
+    }
+  }
 }
-header h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  text-align: center;
-  margin: 6px;
-  text-transform: uppercase;
-}
-header .sort {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .sort label {
-  font-weight: 800;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  margin: 6px;
-  text-transform: uppercase;
-}
-header .sort .select-wrapper {
-  position: relative;
-  margin: 6px;
-  padding: 0px;
-}
-header .sort .select-wrapper i {
-  position: absolute;
-  top: 35%;
-  right: 12px;
-  border: solid #ffffff;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-header .sort .select-wrapper select {
-  -webkit-appearance: none;
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: #141414;
-  border: 1px solid #717171;
-  padding: 9px 100px 9px 15px;
-}/*# sourceMappingURL=nav.css.map */
