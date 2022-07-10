@@ -7,29 +7,29 @@ interface Props {
 }
 
 const Card: React.FC<Props> = (props): JSX.Element => {
-	const { id, dropDate, icon, image, name, website } = props.athlete;
+	const { id, drop_date, icon_path, image_path, name, site_url } = props.athlete;
 
 	return (
 		<div className="card">
 
 			<div className="image-container">
 
-				<img src={image} alt={`${name} photo`} />
+				<img src={image_path} alt={`${name} photo`} />
 
 				<div className="card-content">
 					<div className="card-header">
 						<div className="drop-date">
-							<p className="date">{dropDate}</p>
+							<p className="date">{drop_date}</p>
 							<p className="description">Drop Date</p>
 						</div>
-						<span className="icon">{icon}</span>
+						<span className="icon">{icon_path}</span>
 					</div>
 
 					<div className="card-body">
 						<h4>{name}</h4>
 						<div className="link">
 							<span>;& </span>
-							<a href={website}>{website}</a>
+							<a href={site_url}>{site_url}</a>
 						</div>
 					</div>
 				</div>

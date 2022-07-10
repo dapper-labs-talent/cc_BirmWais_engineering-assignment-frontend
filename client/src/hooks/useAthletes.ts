@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Athlete } from '../utils/types';
-import athletesJson from '../utils/dummy.json';
+import athletesJson from '../utils/athletes.json';
 
 const useAthletes = () => {
 	const [athletes, setAthletes] = useState<Athlete[]>([]);
@@ -17,7 +17,7 @@ const useAthletes = () => {
 	}
 
 	const loadAthletes = () => {
-		const initialLoad = athletesJson.slice(0, 3)
+		const initialLoad = athletesJson.slice(0, 8)
 		setAthletes(initialLoad);
 	}
 

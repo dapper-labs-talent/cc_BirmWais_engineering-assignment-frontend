@@ -1,8 +1,8 @@
 export interface Athlete {
 	id: number;
-	dropDate: string;
-	icon: string;
-	image: string;
+	drop_date: string;
+	icon_path: string;
+	image_path: string;
 	name: string;
-	website: string;
+	site_url: string;
 }

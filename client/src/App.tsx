@@ -19,13 +19,13 @@ const App: React.FC = (): JSX.Element => {
 		if (sortParams === "newest") {
 			setSortedAthletes(
 				athletesArray.sort((a, b) => {
-					return +new Date(b.dropDate) - +new Date(a.dropDate);
+					return +new Date(b.drop_date) - +new Date(a.drop_date);
 				})
 			)
 		} else {
 			setSortedAthletes(
 			athletesArray.sort((a, b) => {
-				return +new Date(a.dropDate) - +new Date(b.dropDate);
+				return +new Date(a.drop_date) - +new Date(b.drop_date);
 			}))
 		}
 	}
@@ -41,7 +41,7 @@ const App: React.FC = (): JSX.Element => {
       <CardsMap 
         athletes={sortedAthletes} 
         joinDrop={joinDrop} 
-        loadMoreAthletes={loadMoreAthletes} 
+        loadMoreAthletes={loadMoreAthletes}
       />
     </>
   );
