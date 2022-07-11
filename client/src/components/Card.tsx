@@ -14,7 +14,7 @@ const Card: React.FC<Props> = (props): JSX.Element => {
 
 			<div className="image-container">
 
-				<img src={`media/images/${image_path}`} alt={`${name}`} />
+				<img src={`media/images/${image_path}`} alt={`${name}`} className="card-image" />
 
 				<div className="card-content">
 					<div className="card-header">
@@ -28,7 +28,7 @@ const Card: React.FC<Props> = (props): JSX.Element => {
 					<div className="card-body">
 						<h4>{name}</h4>
 						<div className="link">
-							<img src="media/icons/link-vector.png" alt="" />
+							<img src="media/icons/link-vector.png" alt="link icon" />
 							<a href={site_url}>{site_url}</a>
 						</div>
 					</div>
@@ -37,7 +37,7 @@ const Card: React.FC<Props> = (props): JSX.Element => {
 			</div>
 
 			<div className="card-athletes-footer">
-				<button className="join-drop" onClick={() => props.joinDrop(id)}>Join Drop ;&</button>
+				<button className="join-drop" onClick={() => props.joinDrop(id)}>Join Drop <span><img src="media/icons/shopping-cart.png" alt="shopping cart icon" /></span></button>
 			</div>
 
 		</div>

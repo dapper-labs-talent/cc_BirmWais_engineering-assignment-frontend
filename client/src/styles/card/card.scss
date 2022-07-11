@@ -1,21 +1,16 @@
 @import '../variables/variables.scss';
 
 .card {
-	width: fit-content;
-	max-width: 100%;
 	box-sizing: border-box;
-	margin: 12px;
 	color: #ffffff;
 
 	.image-container {
 		position: relative;
 		overflow: hidden;
-		// box-shadow: 0px 0px 3px #4b7cee50, inset 0px 0px 3px #4b7cee50;
 
-		img {
-			max-width: 90vw;
+		.card-image {
 			display: block;
-			// filter: blur(3px);
+			width: 100%;
 		}
 
 		.card-content {
@@ -29,29 +24,22 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				padding-top: 18px;
-				padding-left: 24px;
-				padding-right: 24px;
 		
 				.drop-date {
 					.date {
-						font-size: 18px;
-						font-weight: 600;
 						color: #ffffff;
 					}
 		
 					.description {
-						font-size: 14px;
 						color: #b5b5b5;
 					}
 				}
 			}
 		
 			.card-body {
-				padding-top: 36px;
-				padding-bottom: 54px;
 		
 				h4 {
+					font-size: 100%;
 					text-align: center;
 				}
 		
@@ -69,8 +57,9 @@
 
 	.card-athletes-footer {
 		button {
-			// @include removeButtonDefaults();
-			// @include buttonStyle();
+			@include removeButtonDefaults();
+			@include buttonStyle();
+			
 		}
 	}
 }
