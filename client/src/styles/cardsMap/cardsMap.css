@@ -1,8 +1,9 @@
 .display-athletes .athletes-map {
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 780px;
-  margin: auto;
+  gap: 1.2%;
+  padding: 1.2%;
 }
 .display-athletes .athletes-map .card {
   margin-left: auto;
@@ -34,7 +35,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media only screen and (min-width: 1120px) {
+@media only screen and (min-width: 1150px) {
   .display-athletes .athletes-map {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 1512px;

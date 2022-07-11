@@ -61,9 +61,11 @@ header .sort .select-wrapper select {
   header h1 {
     font-size: 26px;
     margin: 24px;
+    margin-left: 1.2%;
   }
   header .sort {
     margin: 24px;
+    margin-right: 1.2%;
   }
   header .sort label {
     font-size: 16px;
@@ -82,7 +84,10 @@ header .sort .select-wrapper select {
 @media only screen and (min-width: 1024px) {
   header h1 {
     font-size: 36px;
-    margin: 40px;
+    margin: 40px 40px 40px 1.2%;
+  }
+  header .sort {
+    margin-right: 1.2%;
   }
   header .sort label {
     font-size: 18px;

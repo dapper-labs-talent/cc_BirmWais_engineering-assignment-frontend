@@ -4,10 +4,11 @@
 .display-athletes {
 
 	.athletes-map {
+		margin: auto;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		max-width: 780px;
-		margin: auto;
+		gap: 1.2%;
+		padding: 1.2%;
 
 		.card {
 			margin-left: auto;
@@ -49,7 +50,7 @@
 }
 
 // Desktop Mode
-@media only screen and (min-width: 1120px) {
+@media only screen and (min-width: 1150px) {
 	.display-athletes {
 
 		.athletes-map {
