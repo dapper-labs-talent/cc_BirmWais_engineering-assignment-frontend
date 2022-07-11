@@ -10,12 +10,12 @@
 	.image-container {
 		position: relative;
 		overflow: hidden;
-		box-shadow: 0px 0px 3px #4b7cee50, inset 0px 0px 3px #4b7cee50;
+		// box-shadow: 0px 0px 3px #4b7cee50, inset 0px 0px 3px #4b7cee50;
 
 		img {
 			max-width: 90vw;
 			display: block;
-			filter: blur(3px);
+			// filter: blur(3px);
 		}
 
 		.card-content {
@@ -69,8 +69,8 @@
 
 	.card-athletes-footer {
 		button {
-			@include removeButtonDefaults();
-			@include buttonStyle();
+			// @include removeButtonDefaults();
+			// @include buttonStyle();
 		}
 	}
 }

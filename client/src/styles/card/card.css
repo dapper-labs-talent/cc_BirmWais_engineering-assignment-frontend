@@ -10,12 +10,10 @@
 .card .image-container {
   position: relative;
   overflow: hidden;
-  box-shadow: 0px 0px 3px rgba(75, 124, 238, 0.3137254902), inset 0px 0px 3px rgba(75, 124, 238, 0.3137254902);
 }
 .card .image-container img {
   max-width: 90vw;
   display: block;
-  filter: blur(3px);
 }
 .card .image-container .card-content {
   position: absolute;
@@ -54,24 +52,4 @@
 .card .image-container .card-content .card-body .link a {
   color: #ffffff;
   text-decoration: none;
-}
-.card .card-athletes-footer button {
-  background-color: transparent;
-  border-width: 0;
-  font-family: inherit;
-  font-size: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  padding: 0;
-  background: #4b7dee;
-  color: #ffffff;
-  width: 100%;
-  font-size: 18px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
 }/*# sourceMappingURL=card.css.map */

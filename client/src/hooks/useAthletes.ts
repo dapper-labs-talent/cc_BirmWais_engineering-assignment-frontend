@@ -17,7 +17,7 @@ const useAthletes = () => {
 	}
 
 	const loadAthletes = () => {
-		const initialLoad = athletesJson.slice(0, 8)
+		const initialLoad = athletesJson.slice(0, 16)
 		setAthletes(initialLoad);
 	}
 

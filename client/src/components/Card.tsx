@@ -14,7 +14,7 @@ const Card: React.FC<Props> = (props): JSX.Element => {
 
 			<div className="image-container">
 
-				<img src={image_path} alt={`${name} photo`} />
+				<img src={`media/images/${image_path}`} alt={`${name}`} />
 
 				<div className="card-content">
 					<div className="card-header">
@@ -22,13 +22,13 @@ const Card: React.FC<Props> = (props): JSX.Element => {
 							<p className="date">{drop_date}</p>
 							<p className="description">Drop Date</p>
 						</div>
-						<span className="icon">{icon_path}</span>
+						<img src={`media/icons/${icon_path}`} alt={`${name} icon`} />
 					</div>
 
 					<div className="card-body">
 						<h4>{name}</h4>
 						<div className="link">
-							<span>;& </span>
+							<img src="media/icons/link-vector.png" alt="" />
 							<a href={site_url}>{site_url}</a>
 						</div>
 					</div>
