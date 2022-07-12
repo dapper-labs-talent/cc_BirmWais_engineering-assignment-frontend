@@ -4,7 +4,7 @@ import athletesJson from '../utils/athletes.json';
 
 
 const loadAthletes = (): Athlete[] => {
-	const initialLoad = athletesJson.slice(0, 16)
+	const initialLoad = athletesJson.slice(0, 12)
 	return initialLoad;
 }
 
@@ -14,10 +14,14 @@ const joinDrop = (id: number) => {
 
 const useAthletes = () => {
 	const [athletes, setAthletes] = useState<Athlete[]>([]);
-	const [currentIndex, setCurrentIndex] = useState<number>(2);
+	const [currentIndex, setCurrentIndex] = useState<number>(12);
 
 	const loadMoreAthletes = useCallback(() => {
-		const newIndex = currentIndex + 2;
+		if (currentIndex > 12) {
+			return;
+		}
+
+		const newIndex = currentIndex + 4;
 		setAthletes(athletesJson.slice(0, newIndex))
 		setCurrentIndex(newIndex);
 	}, [currentIndex]);
