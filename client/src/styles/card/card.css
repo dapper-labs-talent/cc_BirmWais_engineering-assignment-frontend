@@ -21,12 +21,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 7%;
 }
 .card .image-container .card-content .card-header .drop-date .date {
   color: #ffffff;
+  font-size: clamp(11px, 2.5vw, 18px);
 }
 .card .image-container .card-content .card-header .drop-date .description {
   color: #b5b5b5;
+  font-size: clamp(9px, 2.5vw, 14px);
+}
+.card .image-container .card-content .card-header img {
+  width: clamp(14px, 6vw, 37px);
 }
 .card .image-container .card-content .card-body {
   text-overflow: ellipsis;
@@ -34,7 +40,7 @@
 }
 .card .image-container .card-content .card-body h4 {
   text-align: center;
-  font-size: clamp(14px, 3.2vw, 240px);
+  font-size: clamp(14px, 3.2vw, 24px);
 }
 .card .image-container .card-content .card-body .link {
   text-align: center;
@@ -42,10 +48,17 @@
 .card .image-container .card-content .card-body .link a {
   color: #ffffff;
   text-decoration: none;
+  font-size: clamp(11px, 2.5vw, 18px);
+}
+.card .image-container .card-content .card-body .link img {
+  width: clamp(10px, 2.5vw, 18px);
 }
 .card .card-athletes-footer {
   width: 98%;
   margin: auto;
+}
+.card .card-athletes-footer img {
+  width: clamp(14px, 4vw, 24px);
 }
 .card .card-athletes-footer button {
   background-color: transparent;
@@ -67,4 +80,14 @@
   margin-top: -3px;
   z-index: 40;
   opacity: 100%;
+  font-size: clamp(11px, 2.5vw, 18px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .card-athletes-footer button span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3.5%;
 }/*# sourceMappingURL=card.css.map */

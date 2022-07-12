@@ -24,15 +24,22 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+				margin: 7%;
 		
 				.drop-date {
 					.date {
 						color: #ffffff;
+						font-size: clamp(11px, 2.5vw, 18px);
 					}
 		
 					.description {
 						color: #b5b5b5;
+						font-size: clamp(9px, 2.5vw, 14px);
 					}
+				}
+
+				img {
+					width: clamp(14px, 6vw, 37px);
 				}
 			}
 		
@@ -42,7 +49,7 @@
 
 				h4 {
 					text-align: center;
-					font-size: clamp(14px, 3.2vw, 240px);
+					font-size: clamp(14px, 3.2vw, 24px);
 				}
 		
 				.link {
@@ -51,6 +58,11 @@
 					a {
 						color: #ffffff;
 						text-decoration: none;
+						font-size: clamp(11px, 2.5vw, 18px);
+					}
+
+					img {
+						width: clamp(10px, 2.5vw, 18px);
 					}
 				}
 			}
@@ -61,6 +73,10 @@
 		width: 98%;
 		margin: auto;
 
+		img {
+			width: clamp(14px, 4vw, 24px);
+		}
+
 		button {
 			@include removeButtonDefaults();
 			@include buttonStyle();
@@ -68,6 +84,21 @@
 			margin-top: -3px;
 			z-index: 40;
 			opacity: 100%;
+			font-size: clamp(11px, 2.5vw, 18px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			span {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				margin-left: 3.5%;
+			}
 		}
 	}
+}
+
+@media only screen and (min-width: 1150px) {
+
 }
