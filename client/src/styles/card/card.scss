@@ -37,10 +37,12 @@
 			}
 		
 			.card-body {
-		
+				text-overflow: ellipsis;
+				white-space: nowrap;
+
 				h4 {
-					font-size: 100%;
 					text-align: center;
+					font-size: clamp(14px, 3.2vw, 240px);
 				}
 		
 				.link {
@@ -56,10 +58,16 @@
 	}
 
 	.card-athletes-footer {
+		width: 98%;
+		margin: auto;
+
 		button {
 			@include removeButtonDefaults();
 			@include buttonStyle();
-			
+			padding: 10px;
+			margin-top: -3px;
+			z-index: 40;
+			opacity: 100%;
 		}
 	}
 }
