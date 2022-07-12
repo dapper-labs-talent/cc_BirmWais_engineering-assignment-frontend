@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Athlete } from '../utils/types';
 import athletesJson from '../utils/athletes.json';
 
@@ -16,11 +16,11 @@ const useAthletes = () => {
 	const [athletes, setAthletes] = useState<Athlete[]>([]);
 	const [currentIndex, setCurrentIndex] = useState<number>(2);
 
-	const loadMoreAthletes = () => {
+	const loadMoreAthletes = useCallback(() => {
 		const newIndex = currentIndex + 2;
 		setAthletes(athletesJson.slice(0, newIndex))
 		setCurrentIndex(newIndex);
-	}
+	}, [currentIndex]);
 
 	useEffect(() => {
 		setAthletes(loadAthletes());

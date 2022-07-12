@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 
 import './styles/app/app.css';
 import useAthletes from './hooks/useAthletes';
@@ -24,10 +24,9 @@ const sortAthletes = (athletes: Athlete[], sortParams: string): Athlete[] => {
 	}
 }
 
-
 const App: React.FC = (): JSX.Element => {
   const { athletes, joinDrop, loadMoreAthletes } = useAthletes();
-	const [sortedAthletes, setSortedAthletes] = useState<Array<Athlete>>([...athletes]);
+	const [sortedAthletes, setSortedAthletes] = useState<Athlete[]>([...athletes]);
 	const [sortParams, setSortParams] = useState<string>('newest');
 
 	useMemo(() => {
