@@ -84,21 +84,6 @@
 		button {
 			@include removeButtonDefaults();
 			@include buttonStyle();
-			padding: 10px;
-			margin-top: -3px;
-			z-index: 40;
-			opacity: 100%;
-			font-size: clamp(11px, 2.5vw, 18px);
-			display: flex;
-			align-items: center;
-			justify-content: center;
-
-			span {
-				display: inline-flex;
-				align-items: center;
-				justify-content: center;
-				margin-left: 3.5%;
-			}
 		}
 	}
 }
