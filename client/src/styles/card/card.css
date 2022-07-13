@@ -44,11 +44,15 @@
 }
 .card .image-container .card-content .card-body .link {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card .image-container .card-content .card-body .link a {
   color: #ffffff;
   text-decoration: none;
   font-size: clamp(11px, 2.5vw, 18px);
+  margin-left: 3.5%;
 }
 .card .image-container .card-content .card-body .link img {
   width: clamp(10px, 2.5vw, 18px);
