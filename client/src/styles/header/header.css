@@ -59,8 +59,8 @@ header .sort .select-wrapper select {
     align-items: center;
   }
   header h1 {
-    font-size: 26px;
-    margin: 24px;
+    font-size: clamp(24px, 3.2vw, 36px);
+    margin: clamp(24px, 3.2vw, 40px);
     margin-left: 1.2%;
   }
   header .sort {
@@ -68,7 +68,8 @@ header .sort .select-wrapper select {
     margin-right: 1.2%;
   }
   header .sort label {
-    font-size: 16px;
+    font-size: clamp(16px, 2vw, 18px);
+    margin-right: clamp(8px, 2vw, 26px);
   }
   header .sort .select-wrapper i {
     position: absolute;
@@ -82,17 +83,6 @@ header .sort .select-wrapper select {
   }
 }
 @media only screen and (min-width: 1024px) {
-  header h1 {
-    font-size: 36px;
-    margin: 40px 40px 40px 1.2%;
-  }
-  header .sort {
-    margin-right: 1.2%;
-  }
-  header .sort label {
-    font-size: 18px;
-    margin-right: 26px;
-  }
   header .sort .select-wrapper i {
     position: absolute;
     top: 40%;
@@ -100,7 +90,6 @@ header .sort .select-wrapper select {
     padding: 3px;
   }
   header .sort .select-wrapper select {
-    font-size: 18px;
     padding: 14px 226px 14px 30px;
   }
 }/*# sourceMappingURL=header.css.map */
