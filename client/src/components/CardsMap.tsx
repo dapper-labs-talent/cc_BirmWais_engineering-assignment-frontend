@@ -1,25 +1,27 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import { Athlete } from '../utils/types';
 import Card from './Card';
 
-interface Props {
-	athletes: Athlete[];
-	joinDrop: (id: number) => void;
+interface Props extends PropsWithChildren {
 	loadMoreAthletes: () => void;
 }
 
 const CardsMap: React.FC<Props> = (props): JSX.Element => {
-	const { athletes, joinDrop, loadMoreAthletes } = props
+	const { loadMoreAthletes, children } = props
 
 	return (
 		<div className='display-athletes'>
 			<div className="athletes-map">
-				{
-					athletes.map(athlete => <Card key={athlete.id} athlete={athlete} joinDrop={joinDrop} />)
-				}
+				{children}
 			</div>
 			<div className="load-more">
-				<button onClick={loadMoreAthletes}>Load More Athletes</button>
+				<button onClick={loadMoreAthletes}>
+					Load More Athletes
+					<span>
+						<img src="media/icons/down-arrow.png" alt="down-arrow icon" />
+						<img src="media/icons/dots-5.png" alt="dots icon" />
+					</span>
+				</button>
 			</div>
 		</div>
 	);

@@ -6,6 +6,7 @@ import { Athlete } from './utils/types';
 
 import CardsMap from './components/CardsMap';
 import Header from './components/Header';
+import Card from './components/Card';
 
 const sortAthletes = (athletes: Athlete[], sortParams: string): Athlete[] => {
 	const athletesArray = [...athletes];
@@ -37,11 +38,11 @@ const App: React.FC = (): JSX.Element => {
   return (
     <>
       <Header sortParams={setSortParams} />
-      <CardsMap 
-        athletes={sortedAthletes} 
-        joinDrop={joinDrop} 
-        loadMoreAthletes={loadMoreAthletes}
-      />
+      <CardsMap loadMoreAthletes={loadMoreAthletes} >
+				{
+					sortedAthletes.map(athlete => <Card key={athlete.id} athlete={athlete} joinDrop={joinDrop} />)
+				}
+			</CardsMap>
     </>
   );
 }
