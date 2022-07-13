@@ -4,9 +4,7 @@ import './styles/app/app.css';
 import useAthletes from './hooks/useAthletes';
 import { Athlete } from './utils/types';
 
-import CardsMap from './components/CardsMap';
-import Header from './components/Header';
-import Card from './components/Card';
+import { Card, CardsMap, Header } from './components';
 
 const sortAthletes = (athletes: Athlete[], sortParams: string): Athlete[] => {
 	const athletesArray = [...athletes];
