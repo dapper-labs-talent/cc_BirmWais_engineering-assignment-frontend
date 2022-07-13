@@ -11,7 +11,7 @@
 }
 .display-athletes .load-more {
   text-align: center;
-  margin-top: 85px;
+  margin-top: 110px;
   margin-bottom: 85px;
 }
 .display-athletes .load-more button {
@@ -34,22 +34,26 @@
   justify-content: center;
   align-items: center;
   margin: auto;
+  font-size: clamp(14px, 3vw, 18px);
 }
 .display-athletes .load-more button span {
   margin-left: 4px;
+}
+.display-athletes .load-more button span img {
+  width: clamp(40px, 12vw, 63px);
 }
 
 @media only screen and (min-width: 760px) {
   .display-athletes .athletes-map {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .display-athletes .load-more {
-    margin-top: 85px;
-  }
 }
 @media only screen and (min-width: 1150px) {
   .display-athletes .athletes-map {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 1512px;
+  }
+  .display-athletes .load-more {
+    margin-top: 85px;
   }
 }/*# sourceMappingURL=cardsMap.css.map */

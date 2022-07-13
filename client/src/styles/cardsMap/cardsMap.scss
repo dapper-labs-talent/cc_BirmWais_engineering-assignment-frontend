@@ -18,7 +18,7 @@
 
 	.load-more {
 		text-align: center;
-		margin-top: 85px;
+		margin-top: 110px;
 		margin-bottom: 85px;
 
 		button {
@@ -34,9 +34,14 @@
 			justify-content: center;
 			align-items: center;
 			margin: auto;
+			font-size: clamp(14px, 3vw, 18px);
 
 			span {
 				margin-left: 4px;
+
+				img {
+					width: clamp(40px, 12vw, 63px);
+				}
 			}
 		}
 	}
@@ -49,13 +54,6 @@
 		.athletes-map {
 			grid-template-columns: 1fr 1fr 1fr;
 		}
-	
-		.load-more {
-			margin-top: 85px;
-	
-			button {
-			}
-		}
 	}
 }
 
@@ -67,12 +65,9 @@
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 			max-width: 1512px;
 		}
-	
+
 		.load-more {
-	
-			button {
-				
-			}
+			margin-top: 85px;
 		}
 	}
 }
