@@ -18,6 +18,8 @@
 
 	.load-more {
 		text-align: center;
+		margin-top: 85px;
+		margin-bottom: 85px;
 
 		button {
 			@include removeButtonDefaults();
@@ -26,8 +28,16 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 700;
 			color: $secondary;
-			margin: 36px;
 			cursor: pointer;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: auto;
+
+			span {
+				margin-left: 4px;
+			}
 		}
 	}
 }
@@ -41,9 +51,9 @@
 		}
 	
 		.load-more {
+			margin-top: 85px;
 	
 			button {
-				
 			}
 		}
 	}

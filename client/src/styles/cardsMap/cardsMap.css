@@ -11,6 +11,8 @@
 }
 .display-athletes .load-more {
   text-align: center;
+  margin-top: 85px;
+  margin-bottom: 85px;
 }
 .display-athletes .load-more button {
   background-color: transparent;
@@ -26,13 +28,23 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #3082F9;
-  margin: 36px;
   cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.display-athletes .load-more button span {
+  margin-left: 4px;
 }
 
 @media only screen and (min-width: 760px) {
   .display-athletes .athletes-map {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .display-athletes .load-more {
+    margin-top: 85px;
   }
 }
 @media only screen and (min-width: 1150px) {

@@ -18,8 +18,7 @@ const CardsMap: React.FC<Props> = (props): JSX.Element => {
 				<button onClick={loadMoreAthletes}>
 					Load More Athletes
 					<span>
-						<img src="media/icons/down-arrow.png" alt="down-arrow icon" />
-						<img src="media/icons/dots-5.png" alt="dots icon" />
+						<img src="media/icons/down-arrow-overlay.png" alt="down-arrow icon" />
 					</span>
 				</button>
 			</div>
