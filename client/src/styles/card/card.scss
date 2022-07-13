@@ -88,6 +88,107 @@
 	}
 }
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 760px) {
+	.card {	
+		.image-container {
+				.card-content {	
+					.card-header {
+						.drop-date {
+							.date {
+								font-size: clamp(11px, 1.8vw, 18px);
+							}
+
+							.description {
+								font-size: clamp(9px, 1.6vw, 14px);
+							}
+						}
+						img {
+							width: clamp(14px, 3.5vw, 37px);
+						}
+					}
+				
+					.card-body {
+						h4 {
+							font-size: clamp(14px, 2vw, 24px);
+						}
+				
+						.link {
+							a {
+								font-size: clamp(11px, 1.75vw, 18px);
+							}
+		
+							img {
+								width: clamp(10px, 1.75vw, 18px);
+						}
+					}
+				}
+			}
+		}
+
+		.card-athletes-footer {
+			img {
+				width: clamp(14px, 2.5vw, 24px);
+			}
 	
+			button {
+				@include removeButtonDefaults();
+				@include buttonStyle();
+				font-size: clamp(11px, 1.75vw, 18px);
+				padding: clamp(8px, 1.5vw, 18px);
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1150px) {
+	.card {	
+		.image-container {
+				.card-content {	
+					.card-header {
+						.drop-date {
+							.date {
+								font-size: clamp(11px, 1.4vw, 18px);
+							}
+
+							.description {
+								font-size: clamp(9px, 1.2vw, 14px);
+							}
+
+						}
+						img {
+							width: clamp(14px, 2.8vw, 37px);
+						}
+					}
+				
+					.card-body {
+						h4 {
+							font-size: clamp(14px, 1.8vw, 24px);
+						}
+				
+						.link {
+							a {
+								font-size: clamp(11px, 1.5vw, 18px);
+							}
+		
+							img {
+								width: clamp(10px, 1.5vw, 18px);
+						}
+					}
+				}
+			}
+		}
+
+		.card-athletes-footer {
+			img {
+				width: clamp(14px, 1.8vw, 24px);
+			}
+	
+			button {
+				@include removeButtonDefaults();
+				@include buttonStyle();
+				font-size: clamp(11px, 1.2vw, 18px);
+				padding: clamp(8px, 1vw, 18px);
+			}
+		}
+	}
 }

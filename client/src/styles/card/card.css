@@ -79,7 +79,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  padding: clamp(8px, 3vw, 18px);
+  padding: clamp(8px, 2.8vw, 18px);
   margin-top: -3px;
   z-index: 40;
   opacity: 100%;
@@ -94,4 +94,117 @@
   align-items: center;
   justify-content: center;
   margin-left: 3.5%;
+}
+
+@media only screen and (min-width: 760px) {
+  .card .image-container .card-content .card-header .drop-date .date {
+    font-size: clamp(11px, 1.8vw, 18px);
+  }
+  .card .image-container .card-content .card-header .drop-date .description {
+    font-size: clamp(9px, 1.6vw, 14px);
+  }
+  .card .image-container .card-content .card-header img {
+    width: clamp(14px, 3.5vw, 37px);
+  }
+  .card .image-container .card-content .card-body h4 {
+    font-size: clamp(14px, 2vw, 24px);
+  }
+  .card .image-container .card-content .card-body .link a {
+    font-size: clamp(11px, 1.75vw, 18px);
+  }
+  .card .image-container .card-content .card-body .link img {
+    width: clamp(10px, 1.75vw, 18px);
+  }
+  .card .card-athletes-footer img {
+    width: clamp(14px, 2.5vw, 24px);
+  }
+  .card .card-athletes-footer button {
+    background-color: transparent;
+    border-width: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    padding: 0;
+    background: #4b7dee;
+    color: #ffffff;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: clamp(8px, 2.8vw, 18px);
+    margin-top: -3px;
+    z-index: 40;
+    opacity: 100%;
+    font-size: clamp(11px, 2.5vw, 18px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: clamp(11px, 1.75vw, 18px);
+    padding: clamp(8px, 1.5vw, 18px);
+  }
+  .card .card-athletes-footer button span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3.5%;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .card .image-container .card-content .card-header .drop-date .date {
+    font-size: clamp(11px, 1.4vw, 18px);
+  }
+  .card .image-container .card-content .card-header .drop-date .description {
+    font-size: clamp(9px, 1.2vw, 14px);
+  }
+  .card .image-container .card-content .card-header img {
+    width: clamp(14px, 2.8vw, 37px);
+  }
+  .card .image-container .card-content .card-body h4 {
+    font-size: clamp(14px, 1.8vw, 24px);
+  }
+  .card .image-container .card-content .card-body .link a {
+    font-size: clamp(11px, 1.5vw, 18px);
+  }
+  .card .image-container .card-content .card-body .link img {
+    width: clamp(10px, 1.5vw, 18px);
+  }
+  .card .card-athletes-footer img {
+    width: clamp(14px, 1.8vw, 24px);
+  }
+  .card .card-athletes-footer button {
+    background-color: transparent;
+    border-width: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    padding: 0;
+    background: #4b7dee;
+    color: #ffffff;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: clamp(8px, 2.8vw, 18px);
+    margin-top: -3px;
+    z-index: 40;
+    opacity: 100%;
+    font-size: clamp(11px, 2.5vw, 18px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: clamp(11px, 1.2vw, 18px);
+    padding: clamp(8px, 1vw, 18px);
+  }
+  .card .card-athletes-footer button span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3.5%;
+  }
 }/*# sourceMappingURL=card.css.map */
