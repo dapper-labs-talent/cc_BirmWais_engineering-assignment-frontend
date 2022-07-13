@@ -3,25 +3,9 @@ import React, { useMemo, useState } from 'react';
 import './styles/app/app.css';
 import useAthletes from './hooks/useAthletes';
 import { Athlete } from './utils/types';
+import { sortAthletes } from './utils/helpers';
 
 import { Card, CardsMap, Header } from './components';
-
-const sortAthletes = (athletes: Athlete[], sortParams: string): Athlete[] => {
-	const athletesArray = [...athletes];
-	
-	if (sortParams === "newest") {
-		return (
-			athletesArray.sort((a, b) => {
-				return +new Date(b.drop_date) - +new Date(a.drop_date);
-			})
-		)
-	} else {
-		return (
-		athletesArray.sort((a, b) => {
-			return +new Date(a.drop_date) - +new Date(b.drop_date);
-		}))
-	}
-}
 
 const App: React.FC = (): JSX.Element => {
   const { athletes, joinDrop, loadMoreAthletes } = useAthletes();
