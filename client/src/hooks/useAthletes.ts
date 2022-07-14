@@ -6,7 +6,6 @@ const useAthletes = () => {
 	const [athletes, setAthletes] = useState<Athlete[]>([]);
 
 	const loadMoreAthletes = useCallback(() => {
-		console.log("CALLED")
 		setAthletes(getMoreAthletes(athletes));
 	}, [athletes]);
 
