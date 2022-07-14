@@ -18,7 +18,7 @@ const Header: React.FC<Props> = ({sortParams}): JSX.Element => {
 					<label htmlFor="sort-by">Sort By</label>
 					<div className="select-wrapper">
 						<i className="arrow right"></i>
-						<select name="sort-by" id="sort-by" onChange={handleSelect}>
+						<select name="sort-by" id="sort-by" role='select' onChange={handleSelect}>
 							{sortOptions.map(({value, label}) => {
 								return <option value={value} key={label}>{label}</option>;
 							})}
