@@ -21,53 +21,15 @@ const athletesSortedByOldest = [
 	{ "id": 4, "drop_date": "4/15/2022", "name": "Rob Font", "site_url": "newenglandcartel.com", "image_path": "Rob-Font.png", "icon_path": "Rob-Font.png"}
 ]
 
-// Newest
 test('Sort by newest should return the dates in reverse chronological order', () => {
-	const unsortedAthletesArray = [...athletesUnsorted]
+	expect(sortAthletes([...athletesUnsorted], "newest")).toEqual(athletesSortedByNewest);
+	expect(sortAthletes([...athletesUnsorted], "newest")).not.toEqual(athletesUnsorted);
+	expect(sortAthletes([...athletesUnsorted], "newest")).not.toEqual(athletesSortedByOldest);
 
-	expect(
-		sortAthletes(unsortedAthletesArray, "newest")
-	).toEqual(athletesSortedByNewest);
 });
 
-test('Sort by newest should not return unsorted', () => {
-	const unsortedAthletesArray = [...athletesUnsorted]
-
-	expect(
-		sortAthletes(unsortedAthletesArray, "newest")
-	).not.toEqual(unsortedAthletesArray);
-});
-
-test('Sort by newest should not return dates in chronological order', () => {
-	const unsortedAthletesArray = [...athletesUnsorted]
-
-	expect(
-		sortAthletes(unsortedAthletesArray, "newest")
-	).not.toEqual(athletesSortedByOldest);
-});
-
-
-// Oldest
 test('Sort by oldest should return the dates in chronological order', () => {
-	const unsortedAthletesArray = [...athletesUnsorted]
-
-	expect(
-		sortAthletes(unsortedAthletesArray, "oldest")
-	).toEqual(athletesSortedByOldest);
-});
-
-test('Sort by oldest should not return unsorted', () => {
-	const unsortedAthletesArray = [...athletesUnsorted]
-
-	expect(
-		sortAthletes(unsortedAthletesArray, "oldest")
-	).not.toEqual(unsortedAthletesArray);
-});
-
-test('Sort by oldest should not return dates in reverse chronological order', () => {
-	const unsortedAthletesArray = [...athletesUnsorted]
-
-	expect(
-		sortAthletes(unsortedAthletesArray, "oldest")
-	).not.toEqual(athletesSortedByNewest);
+	expect(sortAthletes([...athletesUnsorted], "oldest")).toEqual(athletesSortedByOldest);
+	expect(sortAthletes([...athletesUnsorted], "oldest")).not.toEqual(athletesUnsorted);
+	expect(sortAthletes([...athletesUnsorted], "oldest")).not.toEqual(athletesSortedByNewest);
 });
