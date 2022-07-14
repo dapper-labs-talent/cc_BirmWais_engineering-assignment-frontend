@@ -1,6 +1,11 @@
 .card {
   box-sizing: border-box;
   color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.01);
 }
 .card .image-container {
   position: relative;
@@ -53,6 +58,12 @@
   text-decoration: none;
   font-size: clamp(11px, 2.5vw, 18px);
   margin-left: 3.5%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card .image-container .card-content .card-body .link a:hover {
+  transform: scale(1.01);
+  text-decoration: underline;
 }
 .card .image-container .card-content .card-body .link img {
   width: clamp(10px, 2.5vw, 18px);
@@ -88,12 +99,17 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .card .card-athletes-footer button span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-left: 3.5%;
+}
+.card .card-athletes-footer button:hover {
+  background-color: #3082F9;
+  transform: scale(1.01);
 }
 
 @media only screen and (min-width: 760px) {
@@ -142,6 +158,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
     font-size: clamp(11px, 1.75vw, 18px);
     padding: clamp(8px, 1.5vw, 18px);
   }
@@ -150,6 +167,10 @@
     align-items: center;
     justify-content: center;
     margin-left: 3.5%;
+  }
+  .card .card-athletes-footer button:hover {
+    background-color: #3082F9;
+    transform: scale(1.01);
   }
 }
 @media only screen and (min-width: 1150px) {
@@ -198,6 +219,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
     font-size: clamp(11px, 1.2vw, 18px);
     padding: clamp(8px, 1vw, 18px);
   }
@@ -206,5 +228,9 @@
     align-items: center;
     justify-content: center;
     margin-left: 3.5%;
+  }
+  .card .card-athletes-footer button:hover {
+    background-color: #3082F9;
+    transform: scale(1.01);
   }
 }/*# sourceMappingURL=card.css.map */

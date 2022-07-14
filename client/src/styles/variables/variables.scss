@@ -42,10 +42,11 @@ $Montserrat: "Montserrat", sans-serif;
 		margin-left: 3.5%;
 	}
 	cursor: pointer;
-}
-
-@mixin buttonHoverState {
-	
+  transition: all 0.3s ease-in-out;
+	&:hover {
+		background-color: #3082F9;
+		transform: scale(1.01);
+	}
 }
 
 @mixin sortByInput {

@@ -3,6 +3,11 @@
 .card {
 	box-sizing: border-box;
 	color: #ffffff;
+	cursor: pointer;
+  transition: all 0.3s ease-in-out;
+	&:hover {
+		transform: scale(1.01);
+	}
 
 	.image-container {
 		position: relative;
@@ -63,6 +68,12 @@
 						text-decoration: none;
 						font-size: clamp(11px, 2.5vw, 18px);
 						margin-left: 3.5%;
+						cursor: pointer;
+						transition: all 0.3s ease-in-out;
+						&:hover {
+							transform: scale(1.01);
+							text-decoration: underline;
+						}
 					}
 
 					img {
