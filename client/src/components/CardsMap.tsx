@@ -10,10 +10,11 @@ const CardsMap: React.FC<Props> = (props): JSX.Element => {
 	const { loadMoreAthletes, children } = props
 
 	return (
-		<div className='display-athletes'>
-			<div className="athletes-map">
+		<main className='display-athletes'>
+			<section className="athletes-map">
+				<h2>List of Athletes</h2>
 				{children}
-			</div>
+			</section>
 			<div className="load-more">
 				<button onClick={loadMoreAthletes}>
 					Load More Athletes
@@ -22,7 +23,7 @@ const CardsMap: React.FC<Props> = (props): JSX.Element => {
 					</span>
 				</button>
 			</div>
-		</div>
+		</main>
 	);
 }
 
