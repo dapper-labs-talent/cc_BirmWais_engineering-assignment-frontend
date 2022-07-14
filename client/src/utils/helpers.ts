@@ -27,11 +27,10 @@ export const joinDrop = (id: number) => {
 	console.log(id);
 }
 
-export const getMoreAthletes = (currentIndex: number, athletesArray: Athlete[]): [number, Athlete[]] => {
-	if (currentIndex > 12) {
-		return [currentIndex, athletesArray];
+export const getMoreAthletes = (athletesArray: Athlete[]): Athlete[] => {
+	if (athletesArray.length >= 16) {
+		return athletesArray;
 	}
 
-	const newIndex = currentIndex + 4;
-	return [newIndex, athletesJson.slice(0, newIndex)];
+	return athletesJson;
 };

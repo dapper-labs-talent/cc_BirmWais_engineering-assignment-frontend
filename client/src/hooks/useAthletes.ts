@@ -4,14 +4,11 @@ import { getMoreAthletes, joinDrop, loadAthletes } from '../utils/helpers';
 
 const useAthletes = () => {
 	const [athletes, setAthletes] = useState<Athlete[]>([]);
-	const [currentIndex, setCurrentIndex] = useState<number>(12);
 
 	const loadMoreAthletes = useCallback(() => {
-		const [newIndex, athletesArray] = getMoreAthletes(currentIndex, athletes);
-
-		setCurrentIndex(newIndex);
-		setAthletes(athletesArray);
-	}, [currentIndex]);
+		console.log("CALLED")
+		setAthletes(getMoreAthletes(athletes));
+	}, [athletes]);
 
 	useEffect(() => {
 		setAthletes(loadAthletes());
