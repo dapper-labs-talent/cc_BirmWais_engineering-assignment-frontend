@@ -17,6 +17,12 @@ test('select should have default value of newest', () => {
   expect(screen.getByRole('select')).not.toHaveValue("oldest");
 })
 
+test('renders 12 cards', () => {
+  render(<App />);
+
+	expect(screen.getAllByRole('card')).toHaveLength(12);
+	expect(screen.getAllByRole('card')).not.toHaveLength(16);
+});
 
 test('renders footer/load more button', () => {
   render(<App />);

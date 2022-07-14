@@ -10,7 +10,7 @@ const Card: React.FC<Props> = (props): JSX.Element => {
 	const { id, drop_date, icon_path, image_path, name, site_url } = props.athlete;
 
 	return (
-		<div className="card">
+		<div className="card" role='card'>
 
 			<div className="image-container">
 
