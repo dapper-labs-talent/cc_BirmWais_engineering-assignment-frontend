@@ -29,7 +29,7 @@ const Card: React.FC<Props> = (props): JSX.Element => {
 						<h4>{name}</h4>
 						<div className="link">
 							<img src="media/icons/link-vector.png" alt="link icon" />
-							<a href={site_url}>{site_url}</a>
+							<a href={`https://${site_url}`} target="_blank">{site_url}</a>
 						</div>
 					</div>
 				</div>
